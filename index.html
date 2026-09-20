@@ -4,167 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>
-  zampira
-</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="poem.css">
-<style>
-body{
-  background-image:url(background.jpg);
-  
-}
-  nav{
-    position:fixed;
-    z-index:1000;
-  }
-  .nv{
-     background:rgba(100,150,255,0.15);
-backdrop-filter:blur(10px);
--webkit-backdrop-filter:blur(10px);
-border-bottom:1px solid rgba(100,150,255,0.2);
-    border-radius:15px;
-    width:370px;
-    height:120px;
-    margin-top:30px;
-  }
-  .vb{
-       list-style:none;
-    display:flex;
-
-  
-  }
-  .vb li{
-    width :100px;
-  }
-  .vb a{
-    text-decoration: none;
-    color:white;
-   margin-top:30px;
-  }
-  .vb a:hover{
-    color:#d4af37;
-     transform: scale(1.1); 
-  }
-  .vb a:active{
-    color:black;
-  }
-  .vn{
-    font-size:25px;
-    font-famliy:arial;
-    text-align:center;
-  }
-  #vc{
-    margin-left:70px;
-    margin-top :5px;
-    border-radius:20px;
-    border:none;
-    outline-color:none;
-    color:none;
-    background:rgba(255,255,255,0.9);
- padding:6px 14px;
-  }
-  .logo{
-    width:33px;
-    height:33px;
-    margin-left: 165px;
-    margin-top :05px;
-    border-radius :50%;
-    object-fit:cover;
-    border :20x solid rgba(255,255,255,0.3);
-  }
-  .aa{
-background-size: 350px;
-    justify-content: center;
-backdrop-filter:blur(10px);
-webkit-backdrop-filter:blur(10px);
-border-bottom:1px solid rgba(100,150,255,0.2);
-border-radius: 10%;
-height:500px;
-width:380px;
-  }
-  .aa h2 {
-    text-align :center;
-    font-family:'Times New Roman', serif;
-    color: rgba(20,40,250,0.3
-    );
-    font-size: 24px;
-  }
-  .aa p{
-    text-align :center;
-    color:white
-    ;
-    font-family: 'Times New Roman', Times, serif;
-  }
-      .categories {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      margin: 30px 0;
-    }
-   .category-card button {
-     margin-left :200px;
-   }
-    .category-card {
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(212,175,55,0.3);
-      border-radius: 20px;
-      padding: 20px;
-      text-align: center;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-</style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="index.css">
+  <title>zampira</title>
 </head>
 
 <body>
-  <<script src="poetry.js"></script>
-  <nav>
-    <div class="nv">
-      <section>
-        <img src="logo.jpg" alt="VoP" class="logo" />
-      </section>
-              <section>
-        <input type="text" placeholder="search for your team" id="vc">
-      </section>
-      <ol class="vb">
-
-        <li class="material-icons"><a href="index.html">home</a></li>
-        <li class="material-icons"><a href="vi">team</a></li>
-        <li class="material-icons"><a href="vv">fixture</a></li>
-        <li class="material-icons"><a href="">notification</a></li>
-        <li class="material-icons"><a href="bb">category</a>trophy</li>
-        <li class="material-icons"><a href="#">login</a></li>
-        <li class="material-icons">
-          <a href="">
-            menu
-          </a>
-        </li>
-      </ol>
-    </div>
-  <section>
-    <div class="aa">
-    <h2>Malawihootest updates</h2>
-    <hr>
-    you must push a little harder to break the wall
-    <br><p id="inner"></p><br>
-      <div class="categories">
-    <div class="category-card">❤️ Love</div>
-    <div class="category-card">🌱 Life</div>
-    <div class="category-card">🔥 Hate</div>
-    <div class="category-card">🏛️ Politics</div>
-    <div class="category-card">📚 Education</div>
-    <div class="category-card">💍 Wedding</div>
-    <div class="category-card">🤝 Relationship</div>
-    <div class="category-card">✨ Spiritual</div>
-  </div>
-
+  <div class="welcome">
+    <dl class="come">
+      <dt><h1>WELCOME TO ZAMPIRA</h1></dt>
+      <dd><h4>Malawi Football Updates</h4></dd>
+      <br><br><br>
+      <div class="select">
+      <p class="teamselect">
+        <h1>select your</h1><h2>favourite team</h2>
+      </p>
+      <br><button class="sel" type="submit">select</button>
+      </div>
+    </dl>
     
-    <button class="category-card" type="submit">select</button>
-    </div>
-  </section>
   </div>
 </body>
 
