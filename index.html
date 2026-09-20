@@ -51,7 +51,7 @@ border-bottom:1px solid rgba(100,150,255,0.2);
   text-align: center;
   color: rgb(10, 200, 5);
 }
-.teamz{
+#teamz{
   margin-left:65px;
   width:260px;
   height:30px;
@@ -84,7 +84,7 @@ border-bottom:1px solid rgba(100,150,255,0.2);
       <p class="teamselect">
         <h1>select your</h1><h2>favourite team</h2>
       </p>
-            <br><select class="teamz">
+            <br><select id="teamz">
   <option>Blue Eagles Fc</option>
   <option>Chitipa United</option>
   <option>Civil Service United Fc</option>
@@ -104,7 +104,7 @@ border-bottom:1px solid rgba(100,150,255,0.2);
   
 </select>
 <br><br>
-<button class="continue">continue</button>
+<button class="continue" onclick="alert('welcome the FaN of '+document.getElementById('teamz').value)">continue</button>
       </div>
     </dl>
     
