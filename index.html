@@ -9,39 +9,37 @@
   <title>zampira</title>
 <style>
 body{
-  background-image:url(Stadium.jpg);
-  background-position: center;
- background-size: cover;
- background-attachment: fixed;
-background-repeat: 70px;
+  background-color: black;
 }
+
 .welcome{
-       background:rgba(10,10,255,0.18);
-backdrop-filter:blur(6px);
--webkit-backdrop-filter:blur(10px);
-border-bottom:1px solid rgba(100,150,255,0.2);
-    border-radius:15px;
+  background-color: white;
+  border-radius: 15px;
     width:370px;
-    height:250px;
-    margin-top:50px;
-    justify-content: center;
+  height:300px;
 }
-.welcome h1 {
+.welcome h1{
   text-align: center;
-  font-family: 'comic sans'arial ;
+  color: black;
+  font-weight: 30px;
+  font-size: 30px;
 }
 .welcome h4{
-  text-align: center;
-  color:red;
+  text-align : center;
+  color: red;
+  font-size: 25px;
+}
+.welcome p{
+  text-align : center;
 }
 .select{
-       background:rgba(100,150,255,0.19);
-backdrop-filter:blur(6px);
--webkit-backdrop-filter:blur(7px);
-border-bottom:1px solid rgba(100,150,255,0.2);
+       background:#3F4259;
+backdrop-filter:blsol6px);
+-webkit-backdrop-filter:black(7px);
+border-bottom:1px solid black;
     border-radius:15px;
     width:370px;
-    height:250px;
+  height:300px;
     margin-top:30px;
 }
 .select h1{
@@ -50,46 +48,50 @@ border-bottom:1px solid rgba(100,150,255,0.2);
 }
 .select h2{
   text-align: center;
-  color: rgb(10, 200, 5);
+color:green;
+font-size: 30px;
+  margin-top :70px;
+
 }
-#teamz{
-    width:180px;
-  height:50px;
-  border: solid #30D225rkseagreenrgba(20, 247, 7, 1);
-  color: white;
-  border-radius:15px;
-  background:none;
-  }
-.continue{
-  margin-left:80px;
-  width:160px;
-  height:50px;
-  border: green;
-  color: white;
-  border-radius:15px;
-  background-color:green;
-  }
-.UI{
+.teamz{
+
   background:black;
-  width:279px;
-  height:70px;
+  width:259px;
+  height:50px;
+  margin-left :50px;
+  margin-top :50px;
+  border-radius:15px;
+  border :solid #4ade80;
+  color: white;
+}
+.continue{
+  color:white;
+  border:solid #4ade70;
+  background:green;
+  width:259px;
+  height :50px;
+  margin-left:50px;
+  margin-top :45px;
+  border-radius :15px;
+  cursor: pointer;
 }
 </style>
 </head>
 
-<body><div class="UI">
+<body>
+  <section class="ui">
   <div class="welcome">
     <dl class="come">
       <dt><h1>WELCOME TO ZAMPIRA</h1></dt>
-      <dd><h4>Malawi Football Updates</h4></dd>
-<dd><h4>follow the game</h4></dd>
-<dd><h4>folow ur team</h4></dd>
-      <br><p style="align-text:center;">follow the game.follow your team</p><br><br>
+      <dd><h4>Malawi Football Updates</h4></dd></dl>
+      <br><p><b><i>follow the game.follow your team</i></b></p>
+      </div>
+      <br><br>
       <div class="select">
       <p class="teamselect">
-        <h1>select your</h1><h2>favourite team</h2>
+        <h2>select your favourite team</h2>
       </p>
-            <br><select id="teamz">
+      <br><select class="teamz">
   <option>Blue Eagles Fc</option>
   <option>Chitipa United</option>
   <option>Civil Service United Fc</option>
@@ -106,15 +108,10 @@ border-bottom:1px solid rgba(100,150,255,0.2);
   <option value="">Moyale Barracks Fc</option>
   <option value="">Red Lions Fc</option>
   <option value="">Silver Strikers Fc</option>
-  
-</select>
-<br><br>
-<button class="continue" onclick="alert('welcome the FaN of '+document.getElementById('teamz').value)">continue</button>
+</select><br>
+<br><button class="continue">continue</button>
       </div>
-    </dl>
     
-  </div>
-</div>
 </body>
 
 </html>
