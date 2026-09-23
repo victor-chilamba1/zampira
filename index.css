@@ -1,0 +1,74 @@
+body{
+  background-color: black;
+  background-image :url(Stad.jpg);
+  background-position: center;
+  background-repeat: none;
+}
+.logo{
+  border-radius :50%;
+  margin-left:125px;
+}
+.welcome{
+  background-color: white;
+  border-radius: 15px;
+    width:370px;
+  height:300px;
+}
+.welcome h1{
+  text-align: center;
+  color: black;
+  font-weight: 30px;
+  font-size: 30px;
+}
+.welcome h4{
+  text-align : center;
+  color: red;
+  font-size: 25px;
+}
+.welcome p{
+  text-align : center;
+}
+.select{
+       background:#3F4259;
+backdrop-filter:blsol6px);
+-webkit-backdrop-filter:black(7px);
+border-bottom:1px solid black;
+    border-radius:15px;
+    width:370px;
+  height:300px;
+    margin-top:30px;
+}
+.select h1{
+  text-align: center; 
+  color:green;
+}
+.select h2{
+  text-align: center;
+color:green;
+font-size: 28px;
+  margin-top :80px;
+
+}
+#teamz{
+
+  background:black;
+  width:259px;
+  height:50px;
+  margin-left :50px;
+  margin-top :50px;
+  border-radius:15px;
+  border :solid #4ade80;
+  color: white;
+  box-shadow: 0 0 15px #00ff00
+}
+#continue{
+  color:white;
+  border:solid #4ade70;
+  background:green;
+  width:259px;
+  height :50px;
+  margin-left:50px;
+  margin-top :45px;
+  border-radius :15px;
+  cursor: pointer;
+}
