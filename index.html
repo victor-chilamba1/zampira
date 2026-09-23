@@ -120,7 +120,27 @@ font-size: 28px;
 </select><br>
 <br><button id="continue">continue</button>
       </div>
-    <script src="index.js"></script>
+    <script>
+
+    const continueButton = document.getElementById("continue");
+    const teamSelect = document.getElementById("teamz");
+
+    continueButton.addEventListener("click", function() {
+
+      // Get the team selected by the user
+      const selectedTeam =
+        teamSelect.options[teamSelect.selectedIndex].text;
+
+      // Save the selected team
+      localStorage.setItem("myTeam", selectedTeam);
+
+      // Go to home page
+      window.location.href = "home.html";
+
+    });
+
+  </script>
+
 </body>
 
 </html>
