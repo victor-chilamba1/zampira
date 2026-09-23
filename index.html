@@ -7,75 +7,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="index.css">
   <title>zampira</title>
-<style>
-body{
-  background-image:url(IMG-20260921-WA0011.jpg)
-} background-position: center;
-
-.welcome{
-  background-color: white;
-  border-radius: 15px;
-    width:370px;
-  height:300px;
-}
-.welcome h1{
-  text-align: center;
-  color: black;
-  font-weight: 30px;
-  font-size: 30px;
-}
-.welcome h4{
-  text-align : center;
-  color: red;
-  font-size: 25px;
-}
-.welcome p{
-  text-align : center;
-}
-.select{
-       background:#3F4259;
-backdrop-filter:blsol6px);
--webkit-backdrop-filter:black(7px);
-border-bottom:1px solid black;
-    border-radius:15px;
-    width:370px;
-  height:320px;
-    margin-top:30px;
-}
-.select h1{
-  text-align: center; 
-  color:green;
-}
-.select h2{
-  text-align: center;
-color:green;
-font-size: 30px;
-  margin-top :70px;
-
-}
-.teamz{
-
-  background:black;
-  width:259px;
-  height:50px;
-  margin-left :50px;
-  margin-top :50px;
-  border-radius:15px;
-  border :solid #4ade80;
-  color: white;
-}
-.continue{
-  color:white;
-  border:solid #4ade70;
-  background:green;
-  width:259px;
-  height :50px;
-  margin-left:50px;
-  margin-top :34px;
-  border-radius :15px;
-  cursor: pointer;
-}
-</style>
 </head>
 
 <body>
@@ -84,14 +15,16 @@ font-size: 30px;
     <dl class="come">
       <dt><h1>WELCOME TO ZAMPIRA</h1></dt>
       <dd><h4>Malawi Football Updates</h4></dd></dl>
-      <br><p><b><i>follow your team.follow the game</i></b></p>
+      <br>
+      <img src="Tnm.jpg" alt="football is here"class="logo" width="95px" height="80px"><br>
+      <br><p><b><i>Follow Your Team.Follow The Game</i></b></p>
       </div>
-      <br><br>
+      <br>
       <div class="select">
       <p class="teamselect">
-        <h2>select your favourite team</h2>
+        <h2>Select Your Favourite Team</h2>
       </p>
-      <br><select class="teamz">
+      <br><select id="teamz">
   <option>Blue Eagles Fc</option>
   <option>Chitipa United</option>
   <option>Civil Service United Fc</option>
@@ -109,9 +42,9 @@ font-size: 30px;
   <option value="">Red Lions Fc</option>
   <option value="">Silver Strikers Fc</option>
 </select><br>
-<br><button class="continue">continue</button>
+<br><button id="continue">continue</button>
       </div>
-    
+    <script src="index.js"></script>
 </body>
 
 </html>
