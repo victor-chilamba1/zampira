@@ -140,7 +140,26 @@ font-size: 28px;
     });
 
   </script>
+<script>
 
+const continueButton = document.getElementById("continue");
+const teamSelect = document.getElementById("teamz");
+
+continueButton.addEventListener("click", function() {
+
+  
+  const favouriteTeam =
+    teamSelect.options[teamSelect.selectedIndex].text;
+
+  // Save the favourite team
+  localStorage.setItem("favouriteTeam", favouriteTeam);
+
+  
+  window.location.href = "home.html";
+
+});
+
+</script>
 </body>
 
 </html>
