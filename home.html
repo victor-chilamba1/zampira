@@ -273,8 +273,11 @@
     </div>
 
     <div class="nav-item">
-      <span class="material-icons">star</span>
-      My Team
+<a href="myteam.html" id="myTeamLink">
+  <span class="material-icons">star</span>
+  My Team
+</a>
+      
     </div>
 
     <div class="nav-item">
@@ -464,7 +467,27 @@
 
   </footer>
 
+<script>
 
+const favouriteTeam = localStorage.getItem("favouriteTeam");
+
+const myTeamLink = document.getElementById("myTeamLink");
+
+if (favouriteTeam) {
+  myTeamLink.innerHTML = `
+    <span class="material-icons">star</span>
+    ${favouriteTeam}
+  `;
+}
+
+</script>
+<script>
+
+const favouriteTeam = localStorage.getItem("favouriteTeam");
+
+console.log(favouriteTeam);
+
+</script>
 </body>
 
 </html>
