@@ -1,75 +1,469 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>zampira home</title>
-  <link rel="stylesheet" href="home.css">
-  
-<style>
-.body{
-  background-color: rgba(0, 0, 0, 1);
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.nav{
-  background: rgba(39, 37, 37, 1);
-  width : 320px;
-  height:100px;
-  border-radius :10px;
-  position :fixed;
-  display :flex;
-  list-style :none;
-}
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <title>Zampira Home</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f2f2f2;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    
+
+    .header {
+      background: #111;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid red;
+    }
+
+    .brand {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .brand span {
+      color: red;
+    }
+
+    .header-icon {
+      font-size: 28px;
+      color: white;
+    }
 
 
-.nav li{
-  width :160px;
-  margin-top :60px;
-  margin-left :0px;
-}
-.li:hover {
-  background:#5B1616;
-}
-.icons{
-  text-decoration :none;
-  color:white;
+    
 
-}
-.news{
-    background: rgba(39, 37, 37, 1);
-width :355px;
-height :260px;
-margin-top :80px;
-border-radius :10px;
-color:rgba(32, 153, 27, 1);
-}
-</style>
+    .nav {
+      margin: 18px 12px;
+      background: #242424;
+      border-radius: 18px;
+      display: flex;
+      justify-content: space-around;
+      padding: 12px 5px;
+    }
+
+    .nav-item {
+      text-align: center;
+      color: white;
+      font-size: 13px;
+      padding: 8px 7px;
+      border-radius: 12px;
+    }
+
+    .nav-item .material-icons {
+      display: block;
+      font-size: 25px;
+      margin-bottom: 4px;
+    }
+
+    .nav-item.active {
+      background: green;
+    }
+
+
+    
+
+    .container {
+      padding: 0 12px 30px;
+    }
+
+
+
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 22px 4px 10px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 22px;
+      color: #111;
+    }
+
+    .section-title span {
+      color: green;
+      font-size: 14px;
+    }
+
+
+    
+
+    .news-card {
+      background: #242424;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    .news-top {
+      padding: 18px;
+      border-left: 5px solid red;
+    }
+
+    .news-label {
+      color: red;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .news-card h3 {
+      margin: 0 0 10px;
+      font-size: 21px;
+      line-height: 1.25;
+    }
+
+    .news-card p {
+      color: #ddd;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .news-button {
+      background: green;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+
+    
+
+    .match-card {
+      background: white;
+      color: #111;
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .match-header {
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .teams {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+
+    .team {
+      width: 40%;
+      font-weight: bold;
+    }
+
+    .team-logo {
+      width: 65px;
+      height: 65px;
+      object-fit: contain;
+      margin-bottom: 8px;
+    }
+
+    .vs {
+      font-weight: bold;
+      color: red;
+    }
+
+    .match-info {
+      text-align: center;
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid #ddd;
+      color: #555;
+      font-size: 14px;
+    }
+
+
+    
+
+    .result-card {
+      background: #242424;
+      border-radius: 16px;
+      padding: 15px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .result-team {
+      width: 35%;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .score {
+      background: green;
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+
+    
+
+    .footer {
+      text-align: center;
+      background: #111;
+      padding: 20px;
+      margin-top: 25px;
+      color: #aaa;
+      font-size: 13px;
+    }
+
+  </style>
+
 </head>
 
+
 <body>
-  <ol class="nav">
+
+
+  
+
+  <header class="header">
+
+    <div class="brand">
+      zam<span>pira</span>
+    </div>
+
+    <span class="material-icons header-icon">
+      notifications
+    </span>
+
+  </header>
+
+
+
+
+
+  <nav class="nav">
+
+    <div class="nav-item active">
+      <span class="material-icons">home</span>
+      Home
+    </div>
+
+    <div class="nav-item">
+      <span class="material-icons">star</span>
+      My Team
+    </div>
+
+    <div class="nav-item">
+      <span class="material-icons">calendar_month</span>
+      Fixtures
+    </div>
+
+    <div class="nav-item">
+      <span class="material-icons">emoji_events</span>
+      Results
+    </div>
+
+  </nav>
+
+
+
+  <main class="container">
+
+
     
-  <li> <a href="home.html" class="icons">Home</a></li>
-       <li> <a href="" class="icons">My Team</a></li>
-  <li>  <a href="" class="icons">Fixtures</a></li>
-       <li> <a href="" class="icons">Results</a></li>
-  </ol><br>
-<br><br><p>
-<section class="news">
+
+    <div class="section-title">
+
+      <h2>Top News</h2>
+
+      <span>View all</span>
+
+    </div>
+
+
+    <article class="news-card">
+
+      <div class="news-top">
+
+        <div class="news-label">
+          MALAWI FOOTBALL
+        </div>
+
+        <h3>
+          Bullets prepare for mid-season friendly
+        </h3>
+
+        <p>
+          FCB Nyasa Big Bullets will face
+          Changalume Barracks as they prepare
+          for the second round of the league.
+        </p>
+
+        <button class="news-button">
+          Read More
+        </button>
+
+      </div>
+
+    </article>
+
+
+
   
-    <h1 style="color:red;text-align:center;">Top News Today</h1>
-    <p><h3 style ="text-align:center;">In Football</h3></p>
-    <hr style="width:150px;">
-    <p><h4 style="color:white;text-a;margin-left:5px;">
-Bullets prepares for mid-season friendat.<p>
-FCB Nyasa Big Bullets will face Changalume Barracks on Sunday at Zomba Stadium as they prepare for the second round
-</p>
-Saturday 14:30 at Zomba Stadium
-</h4>
-</p>
-  
-</section></p>
+
+    <div class="section-title">
+
+      <h2>Your Next Game</h2>
+
+      <span>View fixture</span>
+
+    </div>
+
+
+    <div class="match-card">
+
+      <div class="match-header">
+        MID-SEASON FRIENDLY
+      </div>
+
+      <div class="teams">
+
+        <div class="team">
+
+          <img
+            src="bullets.png"
+            class="team-logo"
+            alt="FCB Nyasa Big Bullets">
+
+          <div>
+            FCB Nyasa<br>
+            Big Bullets
+          </div>
+
+        </div>
+
+
+        <div class="vs">
+          VS
+        </div>
+
+
+        <div class="team">
+
+          <img
+            src="changalume.png"
+            class="team-logo"
+            alt="Changalume Barracks">
+
+          <div>
+            Changalume<br>
+            Barracks
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="match-info">
+
+         Sunday &nbsp; • &nbsp;
+     14:30
+        <br><br>
+
+         Zomba Stadium
+
+      </div>
+
+    </div>
+
+
+
+    
+
+    <div class="section-title">
+
+      <h2>Latest Results</h2>
+
+      <span>See all</span>
+
+    </div>
+
+
+    <div class="result-card">
+
+      <div class="result-team">
+        Blue Eagles
+      </div>
+
+      <div class="score">
+        2 - 1
+      </div>
+
+      <div class="result-team">
+        Mighty Wanderers
+      </div>
+
+    </div>
+
+
+    <div class="result-card">
+
+      <div class="result-team">
+        Dedza Dynamos
+      </div>
+
+      <div class="score">
+        0 - 0
+      </div>
+
+      <div class="result-team">
+        Luanar Mitundu
+      </div>
+
+    </div>
+
+
+  </main>
+
+
+
+
+
+  <footer class="footer">
+
+    <b>ZAMPIRA</b>
+
+    <br><br>
+
+    Follow Your Team. Follow The Game 🇲🇼
+
+  </footer>
+
+
 </body>
 
 </html>
