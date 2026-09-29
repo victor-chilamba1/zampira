@@ -323,11 +323,17 @@
           FCB Nyasa Big Bullets will face
           Changalume Barracks as they prepare
           for the second round of the league.
-        </p>
+        <br>
 
-        <button class="news-button">
+        <p>
+  <article id="more">
+  
+</article>
+</p></p>
+        <button class="news-button" onclick="set_txt()" type="button">
           Read More
         </button>
+         
 
       </div>
 
@@ -486,6 +492,11 @@ const favouriteTeam = localStorage.getItem("favouriteTeam");
 
 console.log(favouriteTeam);
 
+</script>
+<script>
+  function set_txt(){
+    document.getElementById("more").innerText=" Nyasa Big Bullets announced the signing of 22-year-old Alihaji Mnjale on a three-year contract through June 2029.";
+  }
 </script>
 </body>
 
